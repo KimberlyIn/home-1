@@ -1285,7 +1285,7 @@ hr {
 /* rwd 700X350 */
 @media (max-width: 700px) {
   .container {
-    width: 320px;
+    width: 375px;
   }
   #header {
     display: none;
