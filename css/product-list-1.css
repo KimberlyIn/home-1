@@ -241,14 +241,23 @@ body .none {
 #content .container .col-3 .col-3-top .top-ul li {
   padding-bottom: 4px;
 }
-#content .container .col-3 .col-3-top .top-ul .icon-check-empty {
-  color: #cecece;
-}
-#content .container .col-3 .col-3-top .top-ul .icon-check {
-  color: #cecece;
-}
 #content .container .col-3 .col-3-top .top-ul span {
   color: #989898;
+}
+#content .container .col-3 .col-3-top .top-ul .input-group .input-group-text {
+  padding: 0;
+  border: none;
+  background: none;
+}
+#content .container .col-3 .col-3-top .top-ul .input-group .form-control {
+  height: 18px;
+  padding: 0 12px;
+  border: none;
+  font-size: 12px;
+  color: #989898;
+  background: none;
+  outline: none;
+  box-shadow: none;
 }
 #content .container .col-3 .col-3-top .progress-bar {
   display: block;
@@ -381,14 +390,23 @@ body .none {
 #content .container .navbar2 .col-3-top .top-ul li {
   padding-bottom: 4px;
 }
-#content .container .navbar2 .col-3-top .top-ul .icon-check-empty {
-  color: #cecece;
-}
-#content .container .navbar2 .col-3-top .top-ul .icon-check {
-  color: #cecece;
-}
 #content .container .navbar2 .col-3-top .top-ul span {
   color: #989898;
+}
+#content .container .navbar2 .col-3-top .top-ul .input-group .input-group-text {
+  padding: 0;
+  border: none;
+  background: none;
+}
+#content .container .navbar2 .col-3-top .top-ul .input-group .form-control {
+  height: 18px;
+  padding: 0 12px;
+  border: none;
+  font-size: 12px;
+  color: #989898;
+  background: none;
+  outline: none;
+  box-shadow: none;
 }
 #content .container .navbar2 .col-3-top .progress-bar {
   display: block;
