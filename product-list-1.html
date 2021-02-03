@@ -8,6 +8,7 @@
 	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 
 	<script src="js/main.js"></script>
 	
@@ -17,8 +18,52 @@
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/product-list-1.css">
+	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
+	<link rel="stylesheet" href="jqueryui/style.css">
+
+	<script>
+		$(function() {
+		  $( "#slider" ).slider();
+		});
+	</script>
+
 
 </head>
+
+<style>
+	input[type=checkbox] {
+		cursor: pointer;
+		font-size: 12px;
+		width: 10px;
+		height: 10px;
+		position: relative;
+		background-color: #f4f4f4;
+	}
+		
+	input[type=checkbox]:after {
+		position: absolute;
+		width: 10px;
+		height: 10px;
+		top: 0;
+		content: " ";
+		color: #989898;
+		display: inline-block;
+		visibility: visible;
+		border-radius: 3px;
+		border:1px solid#cecece;
+		background-color: #f4f4f4;
+	}
+		
+	input[type=checkbox]:checked:after {
+		content: "✓";
+		font-size: 12px;
+		font-weight:600;
+		color: #989898;
+		background-color: #f4f4f4;
+	}
+</style>
+
+
 <body>
 	<!-- #header -->
 	<div id="header">
@@ -117,66 +162,108 @@
 
 	<!-- #content -->
 
+	
+
 	<div id="content">
 		<div class="container clearfix">
+			<div id="slider"></div>
 			<div class="col-3">
 				<div class="col-3-top">
 					<h5>FILTER</h5>
 					<p class="p-title">Filter by Brands</p>
 					<ul class="top-ul">
 						<li>
-							<p>
-								<i class="icon-check-empty"></i>
-								<span class="item">Casali</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Casali">
 								<span class="amount">2</span>
-							</p>
+							</div>
 						</li>
 						<li>
-							<p>
-								<i class="icon-check-empty"></i>
-								<span class="item">Decar</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Decar">
 								<span class="amount">12</span>
-							</p>
+							</div>
 						</li>
 						<li>
-							<p>
-								<i class="icon-check"></i>
-								<span class="item">Fantini</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Fantini">
 								<span class="amount">4</span>
-							</p>
+							</div>
 						</li>
 						<li>
-							<p>
-								<i class="icon-check-empty"></i>
-								<span class="item">Flamentstyle</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Flamentstyle">
 								<span class="amount">4</span>
-							</p>
+							</div>
 						</li>
 						<li>
-							<p>
-								<i class="icon-check-empty"></i>
-								<span class="item">Heerenhuis</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Heerenhuis">
 								<span class="amount">6</span>
-							</p>
+							</div>
 						</li>
 						<li>
-							<p>
-								<i class="icon-check-empty"></i>
-								<span class="item">Hoffmann</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Hoffmann">
 								<span class="amount">10</span>
-							</p>
+							</div>
 						</li>
 						<li>
-							<p>
-								<i class="icon-check-empty"></i>
-								<span class="item">Italfloor</span>
+							<div class="input-group">
+								<div class="input-group-prepend">
+								  <div class="input-group-text">
+								  <input type="checkbox" aria-label="Radio button for following text input">
+								  </div>
+								</div>
+								<input type="text" class="form-control" aria-label="Text input with radio button" value="Italfloor">
 								<span class="amount">3</span>
-							</p>
+							</div>
 						</li>
 					</ul>
 					<hr>
-					<p class="p-title">Filter by Price</p>
-					<div class="progress-bar">
+					<p class="p-title">Filter by Price</p>					
+					<p>
+						<label for="amount">Price</label>
+						<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
+					</p>
+					<div id="slider-range"></div>
+					<!-- <div class="progress-bar">
+						<div class="round round-left"></div>
+						<div class="progress"></div>
+						<div class="round round-right"></div>
+					</div> -->
+					<!-- <a class="filter-button" href="#">Filter</a> -->
+					<!-- <div class="progress-bar">
 						<div class="round round-left"></div>
 						<div class="progress"></div>
 						<div class="round round-right"></div>
@@ -184,7 +271,7 @@
 					<div class="price">
 						<p>Price&nbsp; $10 -&nbsp; $599</p>
 						<a class="filter-button" href="#">Filter</a>
-					</div>
+					</div> -->
 				</div>
 				<div class="col-3-middle">
 					<h5>CATEGORIES</h5>
@@ -244,55 +331,60 @@
 					<h5>HOT SALE</h5>
 					<ul class="bottom-ul">
 						<li>
-							<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-							<div class="col-3-bottom-price">
-								<p class="title">Egon Wooden Chair</p>
-								<p>
-									<span class="sundance">★★★</span>
-									<span class="alto">☆</span>
-								</p>
-								<p>
-									<span class="price-bottom">$75,00</span>
-									<span class="pricee-bottom">$55,00</span>
-								</p>
-								
-							</div>
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+								<div class="col-3-bottom-price">
+									<p class="title">Egon Wooden Chair</p>
+									<p>
+										<span class="sundance">★★★</span>
+										<span class="alto">☆</span>
+									</p>
+									<p>
+										<span class="price-bottom">$75,00</span>
+										<span class="pricee-bottom">$55,00</span>
+									</p>								
+								</div>
+							</a>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-							<div class="col-3-bottom-price">
-								<p class="title padding-10">Oyo Cantilever Chair</p>
-								<p>
-									<span class="pricee-bottom">$55,00</span>
-								</p>						
-							</div>
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+								<div class="col-3-bottom-price">
+									<p class="title padding-10">Oyo Cantilever Chair</p>
+									<p>
+										<span class="pricee-bottom">$55,00</span>
+									</p>						
+								</div>
+							</a>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-							<div class="col-3-bottom-price">
-								<p class="title">Kurve Chair</p>
-								<p>
-									<span class="sundance">★★★</span>
-									<span class="alto">☆</span>
-								</p>
-								<p>
-									<span class="price-bottom">$75,00</span>
-									<span class="pricee-bottom">$55,00</span>
-								</p>
-						
-							</div>
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+								<div class="col-3-bottom-price">
+									<p class="title">Kurve Chair</p>
+									<p>
+										<span class="sundance">★★★</span>
+										<span class="alto">☆</span>
+									</p>
+									<p>
+										<span class="price-bottom">$75,00</span>
+										<span class="pricee-bottom">$55,00</span>
+									</p>						
+								</div>
+							</a>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-							<div class="col-3-bottom-price">
-								<p class="title">Marvelous Wooden
-								Chair</p>
-								<p>
-									<span class="price-bottom">$75,00</span>
-									<span class="pricee-bottom">$55,00</span>
-								</p>
-						
-							</div>
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+								<div class="col-3-bottom-price">
+									<p class="title">Marvelous Wooden
+									Chair</p>
+									<p>
+										<span class="price-bottom">$75,00</span>
+										<span class="pricee-bottom">$55,00</span>
+									</p>						
+								</div>
+							</a>
 						</li>
 					</ul>
 				</div>
@@ -310,53 +402,81 @@
 								<p class="p-title">Filter by Brands</p>
 								<ul class="top-ul">
 									<li>
-										<p>
-											<i class="icon-check-empty"></i>
-											<span class="item">Casali</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Casali">
 											<span class="amount">2</span>
-										</p>
+										</div>
 									</li>
 									<li>
-										<p>
-											<i class="icon-check-empty"></i>
-											<span class="item">Decar</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Decar">
 											<span class="amount">12</span>
-										</p>
+										</div>
 									</li>
 									<li>
-										<p>
-											<i class="icon-check"></i>
-											<span class="item">Fantini</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Fantini">
 											<span class="amount">4</span>
-										</p>
+										</div>
 									</li>
 									<li>
-										<p>
-											<i class="icon-check-empty"></i>
-											<span class="item">Flamentstyle</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Flamentstyle">
 											<span class="amount">4</span>
-										</p>
+										</div>
 									</li>
 									<li>
-										<p>
-											<i class="icon-check-empty"></i>
-											<span class="item">Heerenhuis</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Heerenhuis">
 											<span class="amount">6</span>
-										</p>
+										</div>
 									</li>
 									<li>
-										<p>
-											<i class="icon-check-empty"></i>
-											<span class="item">Hoffmann</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Hoffmann">
 											<span class="amount">10</span>
-										</p>
+										</div>
 									</li>
 									<li>
-										<p>
-											<i class="icon-check-empty"></i>
-											<span class="item">Italfloor</span>
+										<div class="input-group">
+											<div class="input-group-prepend">
+											  <div class="input-group-text">
+											  <input type="checkbox" aria-label="Radio button for following text input">
+											  </div>
+											</div>
+											<input type="text" class="form-control" aria-label="Text input with radio button" value="Italfloor">
 											<span class="amount">3</span>
-										</p>
+										</div>
 									</li>
 								</ul>
 								<hr>
@@ -433,55 +553,60 @@
 								<h5>HOT SALE</h5>
 								<ul class="bottom-ul">
 									<li>
-										<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-										<div class="col-3-bottom-price">
-											<p class="title">Egon Wooden Chair</p>
-											<p>
-												<span class="sundance">★★★</span>
-												<span class="alto">☆</span>
-											</p>
-											<p>
-												<span class="price-bottom">$75,00</span>
-												<span class="pricee-bottom">$55,00</span>
-											</p>
-							
-										</div>
+										<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+											<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+											<div class="col-3-bottom-price">
+												<p class="title">Egon Wooden Chair</p>
+												<p>
+													<span class="sundance">★★★</span>
+													<span class="alto">☆</span>
+												</p>
+												<p>
+													<span class="price-bottom">$75,00</span>
+													<span class="pricee-bottom">$55,00</span>
+												</p>							
+											</div>
+										</a>
 									</li>
 									<li>
-										<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-										<div class="col-3-bottom-price">
-											<p class="title padding-10">Oyo Cantilever Chair</p>
-											<p>
-												<span class="pricee-bottom">$55,00</span>
-											</p>
-										</div>
+										<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+											<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+											<div class="col-3-bottom-price">
+												<p class="title padding-10">Oyo Cantilever Chair</p>
+												<p>
+													<span class="pricee-bottom">$55,00</span>
+												</p>
+											</div>
+										</a>
 									</li>
 									<li>
-										<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-										<div class="col-3-bottom-price">
-											<p class="title">Kurve Chair</p>
-											<p>
-												<span class="sundance">★★★</span>
-												<span class="alto">☆</span>
-											</p>
-											<p>
-												<span class="price-bottom">$75,00</span>
-												<span class="pricee-bottom">$55,00</span>
-											</p>
-							
-										</div>
+										<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+											<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+											<div class="col-3-bottom-price">
+												<p class="title">Kurve Chair</p>
+												<p>
+													<span class="sundance">★★★</span>
+													<span class="alto">☆</span>
+												</p>
+												<p>
+													<span class="price-bottom">$75,00</span>
+													<span class="pricee-bottom">$55,00</span>
+												</p>							
+											</div>
+										</a>
 									</li>
 									<li>
-										<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
-										<div class="col-3-bottom-price">
-											<p class="title">Marvelous Wooden
-												Chair</p>
-											<p>
-												<span class="price-bottom">$75,00</span>
-												<span class="pricee-bottom">$55,00</span>
-											</p>
-							
-										</div>
+										<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+											<img src="https://dummyimage.com/79x79/f8f8f8/4e4e4e" alt="">
+											<div class="col-3-bottom-price">
+												<p class="title">Marvelous Wooden
+													Chair</p>
+												<p>
+													<span class="price-bottom">$75,00</span>
+													<span class="pricee-bottom">$55,00</span>
+												</p>							
+											</div>
+										</a>
 									</li>
 								</ul>
 							</div>
@@ -522,7 +647,9 @@
 				<div class="product clearfix">
 					<ul>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p><span class="sundance">★★★</span><span class="alto">☆</span>
 								<br />
 								Bombi Chair
@@ -532,7 +659,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p>
 								<br />
 								Marvelous Modern 3 Seater
@@ -542,7 +671,9 @@
 							</div>
 						</li>
 						<li class="special-offer-item">
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<div class="special-offer">
 								15% Off
 							</div>
@@ -555,7 +686,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p><span class="sundance">★★★</span><span class="alto">☆</span>
 								<br />
 								Pouf Chair
@@ -565,7 +698,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p><span class="sundance">★★★</span><span class="alto">☆</span>
 								<br />
 								Jalis Counter stool
@@ -575,7 +710,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p><span class="sundance">★★★</span><span class="alto">☆</span>
 								<br />
 								Bombi Chair
@@ -585,7 +722,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p><span class="sundance">★★★</span><span class="alto">☆</span>
 								<br />
 								Lucky Chair
@@ -595,7 +734,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p><span class="sundance">★★★</span><span class="alto">☆</span>
 								<br />
 								Cut Chair with 4 Spoke Base
@@ -605,7 +746,9 @@
 							</div>
 						</li>
 						<li>
-							<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							<a href="https://kimberlyin.github.io/shopping-website-project/product-detail.html">
+								<img src="https://dummyimage.com/275x275/f8f8f8/4c4c4c" alt="">
+							</a>
 							<p>
 								<br />
 								Yard SeChair
