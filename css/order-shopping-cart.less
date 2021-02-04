@@ -432,7 +432,7 @@ body {
         .circuit {
             padding: 30px 0;
             ul {
-                width: 50%;
+                width: 55%;
                 text-align: center;
                 margin: 0 auto;
                 li {
@@ -471,15 +471,15 @@ body {
                 padding: 10px 0;
                 li {
                     float: left;
-                    padding: 0 40px;
+                    padding-right: 55px;
                     p {
                         font-weight: 700;
                         color: #808080;
                     }
                 }
                 .product-piece-left {
-                    width: 60%;
-                    padding-left: 0;
+                    width: 61%;
+                    padding-right: 0;
                 }
             }
             .line {
@@ -489,13 +489,13 @@ body {
                 .product-ul-left {
                     position: relative;
                     float: left;
-                    width: 60%;
+                    padding-right: 15%;
                     img {
                         position: absolute;
                         padding: 18px 0;
                     }
                     p {
-                        padding: 60px 200px;
+                        padding: 60px 140px;
                         font-weight: 700;
                         color: #757575;
                     }
@@ -916,7 +916,26 @@ body {
 }
 
 
-/* rwd 1000X768 */
+@media (max-width: 1178px) {
+    #content {
+        .container {
+            .product {
+                .product-title {
+                    .product-piece-left {
+                        width: 56%;
+                    }
+                }
+                li {
+                    .product-ul-left {
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
 
 @media (max-width: 1075px) {
     .container {
@@ -956,7 +975,7 @@ body {
                 li {
                     padding: 0 32px;
                     .product-ul-left {
-                        width: 49%;
+                        width: 46%;
                         p {
                             padding: 47px 0 47px 131px;
                         }
