@@ -320,7 +320,6 @@ button:focus {
   color: #545454;
 }
 #content .main .col-6 button {
-  float: left;
   margin-top: 50px;
   padding: 7px 12px;
   border: none;
@@ -329,10 +328,8 @@ button:focus {
   background-color: #545454;
 }
 #content .main .col-6 .input-group {
-  float: left;
   width: 70%;
-  margin-top: 50px;
-  margin-left: 10px;
+  margin-top: 10px;
   padding: 1px 15px;
   border: 1px solid #545454;
 }
