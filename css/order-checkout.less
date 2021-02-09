@@ -236,15 +236,17 @@ body {
                 margin-left: auto;
                 .menu-big {
                     .dropdown-menu {
-                        width: 1200px;
+                        position: fixed;
+                        width: 90vw;
                         height: 440px;
-                        top: 43px;
-                        left: -790px;
+                        top: 125px;
+                        left: 50%;
                         padding: 51px;
                         border: 1px solid #f3f2f2;
+                        transform: translateX(-50%);
                         &:after {
                             top: -20px;
-                            right: 286px;
+                            right: 27%;
                             border: solid transparent;
                             content: "";
                             height: 0;
@@ -961,7 +963,25 @@ body {
 }
 
 
-/* rwd 1000X768 */
+@media (max-width: 1400px) {
+    .header {
+        .section-a {
+            .navbar {
+                .navbar-nav {
+                    .menu-big {
+                        .dropdown-menu {
+                            &::after {
+                                right: 41%;
+                            }
+                        }
+                    }
+                }               
+            }
+        }
+    }
+}
+
+
 
 @media (max-width: 1075px) {
     .container {
@@ -1058,10 +1078,25 @@ body {
 /* rwd 700X350 */
 
 @media (max-width: 1000px) {
+    .header {
+        .section-a {
+            .navbar {
+                .navbar-nav {
+                    .menu-big {
+                        .dropdown-menu {
+                            position: initial;
+                            transform: none;
+                        }
+                    }
+                }               
+            }
+        }
+    }
     .shopping-bag__subnav {
         right: 0;
         left: 0;
     }
+
 }
 
 
@@ -1094,9 +1129,11 @@ body {
                 .navbar-nav {
                     .menu-big {
                         .dropdown-menu {
+                            position: initial;
                             width: 100%;
                             height: 1510px;
                             padding: 10px 20px;
+                            transform: none;
                             &::after {
                                 display: none;
                             }

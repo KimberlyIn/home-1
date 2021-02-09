@@ -217,16 +217,18 @@ body .none {
   margin-left: auto;
 }
 .header .section-a .navbar .navbar-nav .menu-big .dropdown-menu {
-  width: 1200px;
+  position: fixed;
+  width: 90vw;
   height: 440px;
-  top: 43px;
-  left: -790px;
+  top: 125px;
+  left: 50%;
   padding: 51px;
   border: 1px solid #f3f2f2;
+  transform: translateX(-50%);
 }
 .header .section-a .navbar .navbar-nav .menu-big .dropdown-menu:after {
   top: -20px;
-  right: 286px;
+  right: 27%;
   border: solid transparent;
   content: "";
   height: 0;
@@ -864,7 +866,11 @@ body .none {
   float: left;
   padding-left: 10px;
 }
-/* rwd 1000X768 */
+@media (max-width: 1400px) {
+  .header .section-a .navbar .navbar-nav .menu-big .dropdown-menu::after {
+    right: 41%;
+  }
+}
 @media (max-width: 1075px) {
   .container {
     width: 750px;
@@ -928,6 +934,10 @@ body .none {
 }
 /* rwd 700X350 */
 @media (max-width: 1000px) {
+  .header .section-a .navbar .navbar-nav .menu-big .dropdown-menu {
+    position: initial;
+    transform: none;
+  }
   .shopping-bag__subnav {
     right: 0;
     left: 0;
@@ -947,9 +957,11 @@ body .none {
     padding: 22px 0;
   }
   .header .section-a .navbar .navbar-nav .menu-big .dropdown-menu {
+    position: initial;
     width: 100%;
     height: 1510px;
     padding: 10px 20px;
+    transform: none;
   }
   .header .section-a .navbar .navbar-nav .menu-big .dropdown-menu::after {
     display: none;
