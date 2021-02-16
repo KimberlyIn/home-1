@@ -11,6 +11,7 @@
 	<link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
 
 	<script src="js/main.js"></script>
+	<script src="js/slider.js"></script>
 	
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
@@ -18,27 +19,9 @@
 	<link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/fontello.css">
 	<link rel="stylesheet" href="css/product-list-1.css">
+	<link rel="stylesheet" href="css/slider.css">
 	<link rel="stylesheet" href="http://jqueryui.com/resources/demos/style.css">
 	<link rel="stylesheet" href="jqueryui/style.css">
-
-	<script>
-		<script>
-			$( function() {
-				$( "#slider-range" ).slider({
-				range: true,
-				min: 0,
-				max: 500,
-				values: [ 75, 300 ],
-				slide: function( event, ui ) {
-					$( "#amount" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
-				}
-				});
-				$( "#amount" ).val( "$" + $( "#slider-range" ).slider( "values", 0 ) +
-				" - $" + $( "#slider-range" ).slider( "values", 1 ) );
-			} );
-		</script>
-	</script>
-
 
 </head>
 
@@ -263,17 +246,41 @@
 						</li>
 					</ul>
 					<hr>
-					<p class="p-title">Filter by Price</p>					
-					<p>
+					<p class="p-title">Filter by Price</p>
+					<div class="row">
+						<div class="col-sm-12">
+						  <div id="slider-range"></div>
+						</div>
+					</div>
+					<div class="row slider-labels">
+						<div class="col-xs-6 caption">
+						  <strong>price</strong> <span id="slider-range-value1"></span>
+						</div>
+						<div class="col-xs-6 text-right caption">
+						  <strong class="space">-</strong> <span id="slider-range-value2"></span>
+						</div>
+						<a class="filter-button" href="#">Filter</a>
+					</div>
+					<div class="row">
+						<div class="col-sm-12">
+						  <form>
+							<input type="hidden" name="min-value" value="">
+							<input type="hidden" name="max-value" value="">
+						  </form>
+						</div>
+					</div>			
+					<!-- <p>
 						<label for="amount">Price</label>
 						<input type="text" id="amount" readonly style="border:0; color:#f6931f; font-weight:bold;">
 					</p>
-					<div id="slider-range"></div>
-					<!-- <div class="progress-bar">
-						<div class="round round-left"></div>
-						<div class="progress"></div>
-						<div class="round round-right"></div>
+					<div id="slider-range">
+						<div class="progress-bar">
+							<div class="round round-left"></div>
+							<div class="progress"></div>
+							<div class="round round-right"></div>
+						</div>
 					</div> -->
+					
 					<!-- <a class="filter-button" href="#">Filter</a> -->
 					<!-- <div class="progress-bar">
 						<div class="round round-left"></div>
@@ -493,7 +500,29 @@
 								</ul>
 								<hr>
 								<p class="p-title">Filter by Price</p>
-								<div class="progress-bar">
+								<div class="row">
+									<div class="col-sm-12">
+									  <div id="slider-range"></div>
+									</div>
+								</div>
+								<div class="row slider-labels">
+									<div class="col-xs-6 caption">
+									  <strong>price</strong> <span id="slider-range-value1"></span>
+									</div>
+									<div class="col-xs-6 text-right caption">
+									  <strong class="space">-</strong> <span id="slider-range-value2"></span>
+									</div>
+									<a class="filter-button" href="#">Filter</a>
+								</div>
+								<div class="row">
+									<div class="col-sm-12">
+									  <form>
+										<input type="hidden" name="min-value" value="">
+										<input type="hidden" name="max-value" value="">
+									  </form>
+									</div>
+								</div>	
+								<!-- <div class="progress-bar">
 									<div class="round round-left"></div>
 									<div class="progress"></div>
 									<div class="round round-right"></div>
@@ -501,7 +530,7 @@
 								<div class="price">
 									<p>Price&nbsp; $10 -&nbsp; $599</p>
 									<a class="filter-button" href="#">Filter</a>
-								</div>
+								</div> -->
 							</div>
 						</li>
 						<li class="nav-item">
@@ -826,7 +855,7 @@
 			<!-- section-g -->
 			<hr>
 			<section class="section-h">
-				<div class="row">
+				<div class="section-h-row">
 					<div class="col-5 col-5-l">
 						<h2>schön.</h2>
 						<p>
@@ -938,7 +967,7 @@
 			</section>
 			<!-- section-h -->
 			<section class="section-i">
-				<div class="row">
+				<div class="section-i-row">
 					<div class="col-5 col-5-l">
 						<h2>schön.</h2>
 						<p>
