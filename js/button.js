@@ -10,4 +10,9 @@ $(document).ready(function(){
     $('.option ul li button.eye').click(function() {
         $(this).children('i').toggleClass('icon-red');
     });
+
+    $('.cancel').on('click',function(){
+        $(this).parents('.line').remove();
+
+    });
 });
