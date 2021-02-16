@@ -264,7 +264,7 @@ body {
     box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
 }
 
-.button {
+/* .button {
     margin 0 auto;
     background-color: #FF8566;
     margin-bottom: 33px;
@@ -275,7 +275,7 @@ body {
     -webkit-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
     box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
-}
+} */
 
 /* .close-button {
     transition: all 0.5s ease;
