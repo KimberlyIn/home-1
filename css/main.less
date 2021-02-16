@@ -463,13 +463,17 @@ hr {
                     color: #9f9f9f;
                 }
                 .button {
+                    background: none;
                     a {
                         padding: 4px 7px;
                         font-size: 13px;
                         font-weight: 600;
                         color: white;
                         background-color: #2e2d32;                
-                    }              
+                    }
+                    &:hover {
+                        -webkit-box-shadow: none;
+                    }             
                 }
                 .bon {
                     padding-top: 5px;
@@ -611,12 +615,20 @@ hr {
                     align-items: flex-end ;
                 }
                 .mark-down {
-                    padding: 44px 15px;
-                    text-align: center;
-                    line-height: 25px;
-                    border-radius: 78px;
+                    padding: 38px 20px;
+                    border-radius: 50%;
                     background-color: #62c5de;
+                    // padding: 44px 15px;
+                    // text-align: center;
+                    // line-height: 25px;
+                    // border-radius: 78px;
+                    // background-color: #62c5de;
+                    .original-price {
+                        padding: 0;
+                        text-align: center;
+                    }
                     .discount {
+                        padding: 0;
                         font-size: 27px;
                     }
                 }
@@ -1933,10 +1945,7 @@ hr {
     }
 }
 
-
-
-
-
+  
 
 /* hamburger-menu */
 
@@ -2002,7 +2011,7 @@ hr {
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
-}
+} 
 
 #nav-icon4.open span:nth-child(1) {
   -webkit-transform: rotate(45deg);
@@ -2026,3 +2035,7 @@ hr {
   top: 25px;
   left: 7px;
 }
+
+
+// pop-up
+

@@ -422,12 +422,18 @@ hr {
 #content .flex-item .col-4 .product .silver-chalice {
   color: #9f9f9f;
 }
+#content .flex-item .col-4 .product .button {
+  background: none;
+}
 #content .flex-item .col-4 .product .button a {
   padding: 4px 7px;
   font-size: 13px;
   font-weight: 600;
   color: white;
   background-color: #2e2d32;
+}
+#content .flex-item .col-4 .product .button:hover {
+  -webkit-box-shadow: none;
 }
 #content .flex-item .col-4 .product .bon {
   padding-top: 5px;
@@ -566,13 +572,16 @@ hr {
   align-items: flex-end;
 }
 #content .flex-item .col-4 .col-4_flex-container .mark-down {
-  padding: 44px 15px;
-  text-align: center;
-  line-height: 25px;
-  border-radius: 78px;
+  padding: 38px 20px;
+  border-radius: 50%;
   background-color: #62c5de;
 }
+#content .flex-item .col-4 .col-4_flex-container .mark-down .original-price {
+  padding: 0;
+  text-align: center;
+}
 #content .flex-item .col-4 .col-4_flex-container .mark-down .discount {
+  padding: 0;
   font-size: 27px;
 }
 #content .flex-item .col-4 #carouselExampleIndicators .carousel-indicators {
