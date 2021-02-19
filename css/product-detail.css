@@ -377,7 +377,7 @@ body .icon-red {
   margin: 0 auto;
 }
 #product-info .col-6 .main .pic-size {
-  padding-bottom: 34%;
+  line-height: 10;
 }
 #product-info .col-6 .main img {
   width: 100%;
